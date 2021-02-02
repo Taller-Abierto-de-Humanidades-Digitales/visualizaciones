@@ -3,8 +3,6 @@ import plotly.express as px
 import requests
 import plotly.io as pio
 
-#pio.renderers.default = 'browser'
-
 json_data = 'https://raw.githubusercontent.com/angelnmara/geojson/master/mexicoHigh.json'
 regiones_mx = requests.get(json_data).json()
 
