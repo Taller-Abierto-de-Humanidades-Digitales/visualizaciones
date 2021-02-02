@@ -22,6 +22,11 @@ fig.update_geos(fitbounds='locations')
 fig.update_layout(
     title_text = 'Inmigración por Estado',
     title_x=0.5,
+    title_y=0.99,
+    title_font = dict(
+        family='PT Sans Narrow',
+        size=50
+    ),
     annotations = [dict(
         x=0.55,
         y=-0.1,
@@ -33,5 +38,3 @@ fig.update_layout(
 )
 
 pio.write_html(fig, file='migracion_por_estado.html', auto_open=True)
-
-fig.show()
